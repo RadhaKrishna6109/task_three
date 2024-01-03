@@ -16,3 +16,4 @@ iv) SpringSecurity: SpringSecurity has been used for authentication.
 
 To run make sure to check the server is running in 8080 port or not !
 
+Please download the zip file and extract it .
