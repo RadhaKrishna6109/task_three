@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class = "center">
+	
+
+<h1>About !</h1>
+<h2>Voting in governance elections is a fundamental aspect of democratic systems where citizens have the opportunity to choose their representatives and leaders</h2>
+<h2>Voting holds paramount importance in democratic societies, serving as a primary means for citizens to express their will and actively contribute to the decision-making process. It is not just a right but is often considered a civic duty, emphasizing the responsibility individuals have to participate in shaping the governance of their community and nation.</h2>
+<h2>For more information ->  <a href="https://www.eci.gov.in/" target="_blank">Click me </a>  </h2>
+		<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:red"></h3>
+   		
+   		<div th:text="${@sessionUtilityBean.removeVerificationMessageFromSession()}"></div>
+   		</div>
+   		
+
+
+	<br>	
+	</section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class="center">
+		<div class="text-center">
+			<div style="color: rgb(5, 55, 65)">
+			<h2>**************************************************************</h2>
+			<h1 class="font-weight-bold">Welcome to Voting Application</h1>
+			<h2>**************************************************************</h2>
+		   </div><br>
+			<h3>Please kindly follow the given instructions to use the application</h3><br>
+			<h2> 1 . Click New Voter Registration to register your vote </h2>
+			<h2> 2 . After Register the vote Click Signin page to Signin the application and cast your vote</h2>
+			<h2> 3 . Click on the About to know the more information  </h2>
+			<div th:if=${session.msg}>
+			<h3 th:text="${session.msg}" style="color:red"></h3>
+   			<th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+			
+   		</div>	
+	
+		</div>
+		
+	
+	</section>
+</body>
+</html>

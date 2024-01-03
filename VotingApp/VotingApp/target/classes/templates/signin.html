@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section class = "center">
+	
+<form th:action = "@{/dologin}" method = "post">
+
+<h1>Sign in</h1>
+		
+		<div th:if="${param.error}" style="color:red">
+          Invalid username and password <br><br>
+        </div>
+                            
+         <div th:if="${param.logout}" style="color:red">
+           You are logged out <br><br>
+          </div>
+                            
+   		
+
+		  <pre>Email Id: <input type = "text" name = "username" placeholder=" Your Email" class="inputContainer" required></pre>
+
+<pre>Password: <input type = "password" name= "password" placeholder=" Your Password" class="inputContainer" required></pre>
+
+<input type = "submit" value="Signin">
+
+</form>
+
+<br>
+<hr>
+<div style="color: rgb(8, 65, 60)">
+<h2>For Admin login please follow the </h2>
+<h3>Email Id as: admin</h3>
+<h3>Password is: admin</h3>
+</div>
+
+	<br>	
+	</section>
+</body>
+</html>

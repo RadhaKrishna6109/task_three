@@ -1,0 +1,38 @@
+/* Table Styling */
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Responsive Table */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hover Effect */
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Borders for Rows */
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,11 @@
+create database voting_system;
+use voting_system;
+show tables;
+select * from admin;
+select * from admins_roles;
+select * from voters;
+select * from candidates;
+select * from roles;
+select * from voters_roles;
+desc admin;
+desc admins_roles;

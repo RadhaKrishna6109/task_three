@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap2.css}" />
+	<link rel="stylesheet" th:href="@{/css/table.css}" />
+    <title th:text="${title}">Title</title>
+  </head>
+  <body> 
+
+  <ul>
+  <li><a class="active" th:href="@{/admin/}">Home</a></li>
+   <li><a>Welcome Admin</a></li>
+     <li><a th:href="@{/admin/viewadmins}">View Admins</a></li>
+     <li><a th:href="@{/admin/viewusers}">View Voters</a></li>
+     <li><a th:href="@{/admin/votedetails}">View Candidates</a></li>
+  <li><a th:href="@{/logout}">Logout</a></li>
+</ul>
+
+    <div th:replace="${content}">
+    
+    </div>
+	
+	  </div>
+  </body>
+</html>
